@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Task</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        .container { max-width: 400px; margin: 60px auto; background: #fff; padding: 30px 40px; border-radius: 12px; box-shadow: 0 2px 16px rgba(44,62,80,0.08);}
+        form { display: flex; flex-direction: column; gap: 16px; }
+        .back-link { background: #e67e22; }
+        .back-link:hover { background: #ca7b1b; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>✏️ Edit Task</h1>
+        <form method="POST">
+            <input type="text" name="task" value="{{ task[1] }}" required>
+            <button type="submit">Update</button>
+        </form>
+        <a class="back-link" href="{{ url_for('index') }}">← Back</a>
+    </div>
+</body>
+</html>

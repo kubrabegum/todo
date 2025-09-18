@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    margin: 20px;
+}
+
+h1 {
+    color: #2c3e50;
+}
+
+a {
+    text-decoration: none;
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: #3498db;
+    color: white;
+}
+
+a:hover {
+    background: #2980b9;
+}
+
+button {
+    background: #2ecc71;
+    border: none;
+    padding: 8px 12px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #27ae60;
+}
+
+/* ...existing code... */
+
+input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Add below this line */
+.back-link {
+    display: block;
+    width: fit-content;
+    margin: 20px auto 0 auto;
+    background: #e67e22;
+    color: #fff;
+    text-align: center;
+    transition: background 0.2s;
+}
+
+.back-link:hover {
+    background: #ca7b1b;
+}
